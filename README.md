@@ -1,5 +1,9 @@
 # NIRA Process Forge MCP
 
+<!-- mcp-name: io.github.pachote/nira-process-forge -->
+
+mcp-name: io.github.pachote/nira-process-forge
+
 > Process management for Claude — launch, monitor, and control background system processes
 
 [![PyPI version](https://badge.fury.io/py/nira-process-forge.svg)](https://pypi.org/project/nira-process-forge/)

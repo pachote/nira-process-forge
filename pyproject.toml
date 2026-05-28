@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "nira-process-forge"
-version = "1.0.0"
+version = "1.0.1"
 description = "Process management for Claude — launch, monitor, and control background system processes"
 readme = "README.md"
 requires-python = ">=3.11"
