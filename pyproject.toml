@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nira-process-forge"
+version = "1.0.0"
+description = "Process management for Claude — launch, monitor, and control background system processes"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "pachote", email = "beatsyncpro.official@gmail.com" }
+]
+keywords = ["mcp", "process", "system", "automation", "background-jobs", "claude"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: System :: System Administration",
+]
+
+dependencies = [
+    "mcp[cli]>=1.27.0",
+    "psutil>=5.9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/pachote/nira-process-forge"
+Repository = "https://github.com/pachote/nira-process-forge"
+"Bug Tracker" = "https://github.com/pachote/nira-process-forge/issues"
+
+[project.scripts]
+nira-process-forge = "server:main"
+
+[tool.hatch.build.targets.wheel]
+include = ["server.py"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
